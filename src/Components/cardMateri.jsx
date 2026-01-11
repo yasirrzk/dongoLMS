@@ -1,4 +1,9 @@
+import { useNavigate } from "react-router-dom";
+
 const CardMateri = ({ title, category, kls, count, color, icon }) => {
+  // 1. Inisialisasi useNavigate
+  const navigate = useNavigate();
+
   return (
     <div className="bg-white border-4 border-black rounded-[32px] overflow-hidden shadow-[8px_8px_0px_#000] flex flex-col h-full">
       <div className={`h-40 ${color} border-b-4 border-black flex items-center justify-center text-6xl`}>
@@ -16,10 +21,19 @@ const CardMateri = ({ title, category, kls, count, color, icon }) => {
         <h4 className="text-xl font-[900] mb-6 uppercase leading-tight italic">{title}</h4>
         
         <div className="mt-auto space-y-3">
-          <button className="w-full bg-[#FFD600] border-2 border-black py-3 rounded-xl font-black text-sm uppercase shadow-[4px_4px_0px_#000] active:shadow-none active:translate-y-1 transition-all">
+          {/* 2. Tambahkan onClick untuk navigasi ke halaman Materi */}
+          <button 
+            onClick={() => navigate("/materi")}
+            className="w-full bg-[#FFD600] border-2 border-black py-3 rounded-xl font-black text-sm uppercase shadow-[4px_4px_0px_#000] active:shadow-none active:translate-y-1 transition-all"
+          >
             Pelajari
           </button>
-          <button className="w-full bg-white border-2 border-black py-3 rounded-xl font-black text-sm uppercase hover:bg-gray-100 transition-all">
+
+          {/* 3. Tambahkan onClick untuk navigasi ke halaman Kuis */}
+          <button 
+            onClick={() => navigate("/kuis")}
+            className="w-full bg-white border-2 border-black py-3 rounded-xl font-black text-sm uppercase hover:bg-gray-100 transition-all"
+          >
             Kuis
           </button>
         </div>
