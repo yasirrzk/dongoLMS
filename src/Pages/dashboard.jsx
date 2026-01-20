@@ -7,7 +7,7 @@ const Dashboard = () => {
       <div className="bg-white border-4 border-black shadow-[8px_8px_0px_#000] rounded-[32px] p-8 mb-10 flex justify-between items-center overflow-hidden relative">
         <div className="relative z-10 text-left">
           <h2 className="text-4xl md:text-5xl font-[900] italic uppercase tracking-tighter leading-none mb-3">
-            Semangat Belajar, Budi! 
+            Semangat Belajar, Devita! 
           </h2>
           <p className="font-bold text-gray-600 max-w-md">
             Kamu sudah belajar selama <span className="text-blue-600">5 hari berturut-turut.</span> Pertahankan semangatmu!
@@ -15,7 +15,7 @@ const Dashboard = () => {
         </div>
         <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Budi" className="hidden md:block w-32 h-32 bg-yellow-200 rounded-full border-4 border-black relative z-10" alt="avatar" />
         {/* Dekorasi Background */}
-        <div className="absolute -right-5 -bottom-5 text-9xl opacity-5 grayscale tracking-tighter font-black">STUDY</div>
+        <div className="absolute -right-5 -bottom-5 text-9xl opacity-5 grayscale tracking-tighter font-black">  </div>
       </div>
 
       {/* 2. Statistik Cepat (Quick Stats) */}
@@ -57,7 +57,7 @@ const Dashboard = () => {
             </h4>
             <div className="space-y-3">
                 <MiniRank name="Andi Pratama" xp="1.500" rank="1" isUser={false} />
-                <MiniRank name="Budi Setiawan" xp="1.250" rank="2" isUser={true} />
+                <MiniRank name="Devita Anggraeni" xp="1.250" rank="2" isUser={true} />
                 <MiniRank name="Siti Aminah" xp="1.100" rank="3" isUser={false} />
             </div>
           </div>

@@ -2,7 +2,7 @@ import { FaHouse, FaBook, FaTrophy, FaUser } from "react-icons/fa6";
 
 const Sidebar = ({ activeMenu }) => {
   const menus = [
-    { id: 'dashboard', label: 'Dashboard', icon: <FaHouse />, path: '/' },
+    { id: 'dashboard', label: 'Dashboard', icon: <FaHouse />, path: '/dashboard' },
     { id: 'materi', label: 'Materi', icon: <FaBook />, path: '/materi' },
     { id: 'leaderboard', label: 'Peringkat', icon: <FaTrophy />, path: '/leaderboard' },
     { id: 'profil', label: 'Profil', icon: <FaUser />, path: '/profil' },
@@ -20,7 +20,7 @@ const Sidebar = ({ activeMenu }) => {
       </nav>
       <div className="mt-auto bg-black text-white p-4 rounded-2xl border-2 border-white text-left">
         <p className="text-[10px] font-bold text-blue-400 uppercase">User:</p>
-        <p className="font-black text-sm truncate uppercase">Budi Setiawan</p>
+        <p className="font-black text-sm truncate uppercase">Devita Anggraeni</p>
       </div>
     </aside>
   );

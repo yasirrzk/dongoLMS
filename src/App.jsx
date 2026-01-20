@@ -8,6 +8,7 @@ import Dashboard from "./Pages/dashboard";
 import Materi from "./Pages/materi";
 import Kuis from "./Pages/kuis";
 import Profil from "./Pages/profil";
+import Leaderboard from "./Pages/leaderboard";
 
 function App() {
   // Ganti menjadi false jika ingin mencoba alur login
@@ -25,10 +26,11 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/materi" element={<Materi />} />
         <Route path="/kuis" element={<Kuis />} />
+        <Route path="/leaderboard" element={<Leaderboard />}/>
         <Route path="/profil" element={<Profil />} />
 
         {/* Fallback: Jika user nyasar, kembalikan ke login */}
-        <Route path="*" element={<Navigate to="/" />} />
+        {/* <Route path="*" element={<Navigate to="/" />} /> */}
       </Routes>
     </Router>
   );
